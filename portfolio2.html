@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,700;1,400;1,600&display=swap" rel="stylesheet">-->
+    <link href="https://fonts.googleapis.com/css2?family=Teko:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css"
+        integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ" crossorigin="anonymous">
+    <link rel="stylesheet" href="st.css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+    <title>Aleksandra Tylec</title>
+</head>
+
+<body>
+    <!-- sekcja pierwsza -->
+    <header>
+        <!-- <img class="laptop" src="laptop.png" alt=""> -->
+        <div class="me">
+            <h1 class="first">Witam!</h1>
+            <h2 class="first">Jestem Aleksandra Tylec</h2>
+            <p class="first">Junior front-end-developer</p>
+            <!-- <img src="logo.png" alt="mylogo"> -->
+        </div>
+        <button class="pf">Zobacz moje portfolio</button>
+        <i class="fas fa-laptop"></i>
+        <i class="fas fa-chevron-down"></i>
+        <section class="menu">
+            <div class="nav main">Strona główna</div>
+            <div class="nav tec">Technologie</div>
+            <div class="nav pro">Projekty</div>
+            <div class="nav about">O mnie</div>
+            <div class="nav con">Kontakt</div>
+        </section>
+    </header>
+    <!-- sekcja druga -->
+    <h1 class="tech">Na co dzień stosuję technologie</h1>
+    <section class="second">
+        <div class="card">
+            <img class="html" src="icons/html-5.png" alt="html">
+            <div class="inside">
+                <h2>HTML</h2>
+                <p>Doskonale znam strukturę tworzenia stron internetowych</p>
+            </div>
+        </div>
+        <div class="card">
+            <img class="html" src="icons/css.png" alt="css">
+            <div class="inside">
+                <h2>CSS</h2>
+                <p>Z łatwością potrafię stosować technologię CSS w swoich stronach internetowych</p>
+            </div>
+        </div>
+        <div class="card">
+            <img class="html" src="icons/javascript.png" alt="js">
+            <div class="inside">
+                <h2>JS</h2>
+                <p>Znam podstawy Java Scriptu</p>
+            </div>
+        </div>
+        <div class="card">
+            <img class="html" src="icons/sass.png" alt="sass">
+            <div class="inside">
+                <h2>SASS</h2>
+                <p>Nie jest mi obce stylowanie stron w Sass</p>
+            </div>
+        </div>
+        <div class="card">
+            <img class="html" src="icons/monitor.png" alt="rwd">
+            <div class="inside">
+                <h2>RWD</h2>
+                <p>Doskonale radzę sobie w dostosowaniu stron intetowych do różnych urządzeń</p>
+            </div>
+        </div>
+        <div class="card">
+            <img class="html" src="icons/photograph.png" alt="gimp">
+            <div class="inside">
+                <h2>GIMP</h2>
+                <p>Poza programowaniem stron potrafię tworzyć grafiki</p>
+            </div>
+        </div>
+    </section>
+    <script src="script.js"></script>
+    <script src="jquery-3.3.1.min.js"></script>
+    <script>
+        // $('header .fa-chevron-down ').on('click', function () {
+        //     const scrollMenu = '#' + $(this).attr('class');
+        //     $('body,html').animate({
+        //         scrollTop: $(scrollMenu).offset().top
+        //     }, 500)
+        // });
+
+        $('.fa-chevron-down').on('click', function () {
+            $('body,html').animate({
+                scrollTop: $('h1.tech').offset().top
+            }, 500)
+        });
+        $('button.pf').on('click', function () {
+            $('body,html').animate({
+                scrollTop: $('h1.tech').offset().top
+            }, 500)
+        })
+        $('div.tec').on('click', function () {
+            $('body,html').animate({
+                scrollTop: $('h1.tech').offset().top
+            }, 500)
+        })
+    </script>
+</body>
+
+</html>

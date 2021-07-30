@@ -1,0 +1,351 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* strona główna */
+header {
+    min-height: 100vh;
+    width: 100%;
+    background-image: url(images/laptop\ coffee.jpg);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    overflow: hidden;
+}
+
+/* stylowanie laptopa */
+
+.fa-laptop {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 50px;
+    color: white;
+    cursor: pointer;
+}
+
+/* stylowanie strzałki/ dodanie animacji */
+
+header .fa-chevron-down {
+    position: absolute;
+    bottom: 5%;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 60px;
+    color: white;
+    text-shadow: 0 -20px 0 white;
+    animation: next 1s infinite linear;
+    cursor: pointer;
+}
+
+@keyframes next {
+    0% {
+        bottom: 5%;
+    }
+
+    100% {
+        bottom: 2%;
+    }
+}
+
+/* ustawnienie sekcji powitania */
+div.me {
+    position: absolute;
+    top: 15%;
+    height: 55%;
+    width: 100%;
+    /* transform: translateX(-50%); */
+    font-family: 'Teko', sans-serif;
+    background-color: rgba(0, 0, 0, .5);
+    padding: 30px 0;
+    overflow: hidden;
+}
+
+.first {
+    position: absolute;
+    width: 100%;
+    animation: text .7s 1 cubic-bezier(0.175, 0.885, 0.32, 1.275) both;
+
+
+}
+
+/* witam */
+h1.first {
+    top: 5%;
+    left: -100%;
+    /* transform: translateX(-50%); */
+    font-size: 80px;
+    text-align: center;
+    color: white;
+
+}
+
+/* jestem... */
+h2.first {
+    top: 40%;
+    left: 120%;
+    /* transform: translate(-50%, -50%); */
+    font-size: 60px;
+    text-align: center;
+    color: white;
+    padding: 10px 0;
+}
+
+/* junior... */
+p.first {
+    top: 70%;
+    left: -100%;
+    /* transform: translate(-50%, -50%); */
+    font-size: 40px;
+    text-align: center;
+    color: white;
+    padding: 20px;
+}
+
+@keyframes text {
+    100% {
+        left: 0
+    }
+}
+
+/* przycisk */
+
+button.pf {
+    position: absolute;
+    left: 50px;
+    bottom: 30px;
+    font-family: 'Teko', sans-serif;
+    font-size: 35px;
+    color: white;
+    padding: 10px 20px;
+    background-color: rgba(0, 0, 0, .7);
+    border: 3px solid rgba(255, 255, 255, .5);
+    transform: scale(1);
+    animation: scale .9s 1 linear;
+    transition: .2s;
+    cursor: pointer;
+
+}
+
+/* animacja przycisku */
+button.pf:hover {
+    background-color: rgba(255, 255, 255, .3);
+    color: black;
+    border-right: 4px solid #555;
+    border-top: 4px solid #555;
+    border-left: 4px solid gold;
+    border-bottom: 4px solid gold;
+    animation: rotate .4s 1 linear both;
+}
+
+@keyframes rotate {
+    100% {
+        border-right: 5px solid gold;
+        border-top: 5px solid gold;
+        border-left: 5px solid #555;
+        border-bottom: 5px solid #555;
+    }
+}
+
+
+
+@keyframes scale {
+    0% {
+        transform: scale(0);
+    }
+
+    20% {
+        transform: scale(0);
+    }
+
+    23% {
+        transform: scale(.7);
+    }
+
+    30% {
+        transform: scale(.7);
+    }
+
+    33% {
+        transform: scale(1);
+    }
+
+    40% {
+        transform: scale(1);
+    }
+
+    43% {
+        transform: scale(1.2);
+    }
+
+    50% {
+        transform: scale(1.2);
+    }
+
+    53% {
+        transform: scale(1);
+    }
+
+    60% {
+        transform: scale(1);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+/* boczna sekcja */
+
+section.menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    position: absolute;
+    right: -400px;
+    top: 25%;
+    width: 200px;
+    height: 400px;
+    background-color: rgba(255, 255, 255, .7);
+    transition: .5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+
+}
+
+section.menu.active {
+    right: 0
+}
+
+/* poszczególne przyciski */
+.nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, .9);
+    flex-basis: 78px;
+    width: 98%;
+    font-family: 'Teko', sans-serif;
+    font-size: 30px;
+    color: white;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+
+.nav:hover {
+    background-color: #987;
+    color: black;
+}
+
+/* sekcja dwa */
+
+.tech {
+    position: relative;
+    left: 0;
+    top: 0;
+    font-family: 'Teko', sans-serif;
+    font-size: 60px;
+    text-align: center;
+    padding: 30px 30px 18px;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+
+.tech::after {
+    content: "";
+    position: absolute;
+    left: -100%;
+    bottom: 0;
+    height: 4px;
+    width: 50%;
+    margin: 13px 0;
+    background-color: blue;
+    transition: .5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+
+}
+
+.tech::before {
+    content: "";
+    position: absolute;
+    right: -100%;
+    bottom: 0;
+    height: 4px;
+    width: 50%;
+    background-color: blue;
+    margin-bottom: 5px;
+    transition: .5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.tech:hover::after {
+    left: 30px;
+}
+
+.tech:hover::before {
+    right: 30px;
+}
+
+/* technologie */
+
+section.second {
+    width: 100%;
+    height: 130vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    background-image: url(code.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* background-color: grey; */
+    overflow: hidden;
+}
+
+div.card {
+    position: relative;
+    width: 40%;
+    height: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    transform-style: preserve-3d;
+    cursor: pointer;
+}
+
+div.card:hover {
+    transform: rotateY(180deg);
+
+}
+
+img.html,
+div.inside {
+    position: absolute;
+    width: 50%;
+    margin: 10px;
+    text-align: center;
+    backface-visibility: hidden;
+}
+
+img.html {
+    background-color: black;
+}
+
+div.inside {
+    background-color: green;
+    transform: rotateY(180deg);
+    width: 50%;
+    height: 100%;
+}
+
+div.inside h2 {
+    font-family: 'Teko', sans-serif;
+    font-size: 3rem;
+}
+
+div.inside p {
+    font-family: 'Teko', sans-serif;
+    font-size: 1.5rem;
+}
