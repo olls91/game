@@ -296,21 +296,25 @@ section.second {
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    background-image: url(code.jpg);
+    /* background-image: url(code.jpg);
     background-size: cover;
-    background-repeat: no-repeat;
-    /* background-color: grey; */
+    background-repeat: no-repeat; */
+    /* background-color: #58555A; */
+    background: rgb(88, 85, 90);
+    perspective: 1000px;
+    /* background: linear-gradient(130deg, rgba(88, 85, 90, 1) 52%, rgba(251, 243, 124, 1) 100%); */
     overflow: hidden;
 }
 
 div.card {
     position: relative;
-    width: 40%;
-    height: 30%;
+    width: 300px;
+    height: 300px;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 10px;
+    margin: 20px;
+    transition: transform .7s;
     transform-style: preserve-3d;
     cursor: pointer;
 }
@@ -323,20 +327,22 @@ div.card:hover {
 img.html,
 div.inside {
     position: absolute;
-    width: 50%;
+    width: 90%;
     margin: 10px;
     text-align: center;
     backface-visibility: hidden;
 }
 
 img.html {
-    background-color: black;
+    background: rgb(88, 85, 90);
+    border: 5px double #FBF37C
+        /* background: linear-gradient(130deg, rgba(88, 85, 90, 1) 52%, rgba(251, 243, 124, 1) 100%); */
 }
 
 div.inside {
-    background-color: green;
+    background-color: #FBF37C;
     transform: rotateY(180deg);
-    width: 50%;
+    width: 90%;
     height: 100%;
 }
 
