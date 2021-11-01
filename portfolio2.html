@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!--    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,700;1,400;1,600&display=swap" rel="stylesheet">-->
     <link href="https://fonts.googleapis.com/css2?family=Teko:wght@300;400;700&display=swap" rel="stylesheet">
+    <link href='http://fonts.googleapis.com/css?family=Secular+One&subset=latin,latin-ext' rel='stylesheet'
+        type='text/css'>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css"
         integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ" crossorigin="anonymous">
     <link rel="stylesheet" href="st.css">
@@ -25,7 +27,7 @@
         </div>
         <button class="pf">Zobacz moje portfolio</button>
         <i class="fas fa-laptop"></i>
-        <i class="fas fa-chevron-down"></i>
+        <i class="fas fa-chevron-down main"></i>
         <section class="menu">
             <div class="nav main">Strona główna</div>
             <div class="nav tec">Technologie</div>
@@ -34,9 +36,12 @@
             <div class="nav con">Kontakt</div>
         </section>
     </header>
-    <!-- sekcja druga -->
+
+    <!-- sekcja druga technologie -->
+
     <h1 class="tech">Na co dzień stosuję technologie:</h1>
     <section class="second">
+        <i class="fas fa-chevron-down"></i>
         <div class="container">
             <div class="card">
                 <img class="html" src="icons/html-5.png" alt="html">
@@ -92,51 +97,63 @@
             </div>
         </div>
     </section>
-    <!-- trzecia sekcja -->
 
+    <!-- trzecia sekcja projekty-->
+
+    <h1 class="projects">Projekty</h1>
     <section class="projects">
-        <h1 class="projects">Projekty</h1>
-        <div class="pictues">
-            <div class="fpic">
+        <i class="fas fa-chevron-down"></i>
+        <div class="pictures">
+            <div class="fpic row">
                 <img src="projects/portfolio.png" alt="pf">
-                <h2>Portfolio</h2>
+                <a href="portfolio2.html">Portfolio</a>
+                <!-- <h2>Portfolio</h2> -->
             </div>
-            <div class="spic">
+            <div class="spic row">
                 <img src="projects/toDoList.png" alt="toDoList">
-                <h2>To do list</h2>
+                <a href="pro/myToDoList.html">To do list</a>
+                <!-- <h2>To do list</h2> -->
             </div>
-            <div class="tpic">
-            <img src="projects/game.png" alt="game">
-            <h2>Gra - Kamień papier nożyczki</h2>
+            <div class="tpic row">
+                <img src="projects/game.png" alt="game">
+                <a href="pro/rock.html">Gra - Kamień papier nożyczki</a>
+                <!-- <h2>Gra - Kamień papier nożyczki</h2> -->
             </div>
         </div>
     </section>
-    <script src="script.js"></script>
-    <script src="jquery-3.3.1.min.js"></script>
-    <script>
-        // $('header .fa-chevron-down ').on('click', function () {
-        //     const scrollMenu = '#' + $(this).attr('class');
-        //     $('body,html').animate({
-        //         scrollTop: $(scrollMenu).offset().top
-        //     }, 500)
-        // });
 
-        $('.fa-chevron-down').on('click', function () {
-            $('body,html').animate({
-                scrollTop: $('h1.tech').offset().top
-            }, 500)
-        });
-        $('button.pf').on('click', function () {
-            $('body,html').animate({
-                scrollTop: $('h1.tech').offset().top
-            }, 500)
-        })
-        $('div.tec').on('click', function () {
-            $('body,html').animate({
-                scrollTop: $('h1.tech').offset().top
-            }, 500)
-        })
-    </script>
+    <!-- czwarta sekcja o mnie -->
+    <h1 class="about">O mnie</h1>
+    <section class="aboutme">
+        <div class="letter">
+            <p><span class="typed-text"></span><span class="cursor"></span></p>
+        </div>
+        <p class="one">Witam! Mam na imię Ola i jestem absolwentką Uniwersytetu Ekonomicznego w Katowicach po
+            kierunku - Ekonomia.</p>
+        <p class="second">W wolnych chwilach uwielbiam czytać książki, wycieczki rowerowe oraz wykonywać mini projekty w
+            celu
+            przyswajania
+            tematyki programowania stron internetowych, a od niedawna zajmuję się moim małym synkiem.</p>
+        <p class="third">Projektowaniem stron internetowych zaczęłam się interesować ponad rok temu, kiedy znalazłam
+            kurs "Web developer" u Bartka Borowczyka - "Samuraj Programowania". Niesamowicie mnie to wciągnęło i
+            postanowiłam, że zacznę przygodę ze stronami internetowymi. Od tamtego momentu cały czas wgłębiam się w
+            temat
+            programowania.
+        </p>
+        <p class="fourth"> Skończyłam następujące kursy programowania: </p>
+        <ul>
+            <li class="web">
+                Web developer
+            </li>
+            <li class="adv">Zaawanoswany front-end-developer</li>
+            <li class="pro">Programowanie w JavaScript</li>
+        </ul>
+
+    </section>
+
+    <script src="jquery-3.3.1.min.js"></script>
+    <script src="script.js"></script>
+
 </body>
 
 </html>

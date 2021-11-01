@@ -1,0 +1,140 @@
+    <!DOCTYPE html>
+    <html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="//use.fontawesome.com/releases/v5.0.7/css/all.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=New+Tegomin&display=swap" rel="stylesheet">
+        <title>To do list</title>
+        <style>
+            body {
+                font-family: 'New Tegomin', serif;
+                background-color: #FBF37C;
+                margin: 0;
+                box-sizing: border-box;
+                overflow: hidden;
+            }
+
+            .headline {
+                margin: 20px;
+                text-align: center;
+                text-decoration: underline;
+                text-transform: uppercase;
+                font-size: 2.5rem;
+                letter-spacing: 2px;
+            }
+
+            .fa-clipboard-list {
+                position: absolute;
+                top: -50%;
+                right: 10%;
+                font-size: 50vh;
+                overflow: hidden;
+                opacity: 0.5;
+                animation: icon 10s linear infinite;
+            }
+
+            .fa-arrow-left {
+                position: absolute;
+                top: 5%;
+                left: 3%;
+                font-size: 40px;
+                cursor: pointer;
+            }
+            a{
+                color: black;
+                font-family: 'New Tegomin', serif;
+            }
+            .fa-arrow-left:hover{
+                font-size: 50px;   
+            }
+
+            form {
+                margin: 25px;
+            }
+
+            input {
+                font-size: 15px;
+                margin: 10px;
+                padding: 5px 15px;
+                border: 4px double rgb(119, 119, 119);
+
+            }
+
+            .add {
+                width: 150px;
+                height: 50px;
+                font-size: 24px;
+                font-family: 'New Tegomin', serif;
+                font-weight: bold;
+                background-color: black;
+                color: white;
+                cursor: pointer;
+                /* box-shadow: 0 0 0 5px gray; */
+                border: 6px double #7F7F7F;
+            }
+
+            .add:hover {
+                background-color: #7F7F7F;
+                color: black;
+                border: 6px double #000000;
+            }
+
+            .num {
+                margin: 10px 20px;
+
+            }
+
+            li {
+                font-size: 20px;
+                font-weight: 600;
+                margin: 3px 10px;
+                list-style: url(check.png)
+            }
+
+            li::first-letter {
+                text-transform: uppercase;
+                font-size: 24px;
+            }
+
+            button {
+                margin: 3px 10px;
+                font-size: 12px;
+                background-color: #8b8b8b;
+                font-family: monospace;
+                border: 4px double #000000;
+                cursor: pointer;
+
+            }
+
+
+
+            @keyframes icon {
+                0% {
+                    top: -50%;
+                }
+
+                100% {
+                    top: 100%;
+                }
+            }
+        </style>
+    </head>
+
+    <body>
+        <h1 class="headline">To do list</h1>
+        <i class="fas fa-clipboard-list"></i>
+        <i class="fas fa-arrow-left"></i>
+        <form action="">
+            <input type="text">
+            <button class="add">Add task</button>
+        </form>
+        <h1 class="num">Number of tasks: <span>0</span></h1>
+        <ul></ul>
+        <script src="mytodolist.js"></script>
+    </body>
+
+    </html>

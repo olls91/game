@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="rock.css">
+    <title>Paper, rock, scissors</title>
+</head>
+
+<body>
+    <header>
+        <i class="fas fa-arrow-left"></i>
+        <h1>Zapraszam do gry <span class="rock"> KAMIEŃ</span> <span class="paper">PAPIER </span><span
+                class="sciss">NOŻYCE</span></h1>
+    </header>
+    <h2>Wybierz dłoń:</h2>
+    <div class="select">
+        <img data-option="Kamień" src="kamień.jpg" alt="kamien">
+        <img data-option="Papier" src="papier.jpg" alt="papier">
+        <img data-option="Nożyce" src="nożyce.jpg" alt="nozyce">
+    </div>
+    <div class="hidden">
+        <p>Wybierz dłoń !!!</p>
+    </div>
+    
+    <button>Zacznij grę</button>
+
+    <div class="panel-left">
+        <h3>Wyniki gry:</h3>
+        <p>Twój wybór: <span data-summary="your-choice"></span></p>
+        <p>Wybór komputera: <span data-summary="computer-choice"></span></p>
+    </div>
+    <div class="panel-central">
+       <label for="name"><h3> Wprowadź swoje imię</h3></label>
+        <input type="text">
+    </div>
+   
+    <div class="panel-right">
+        <h3>Aktulane wyniki</h3>
+        <p class="numbers">Liczba gier: <span>0</span></p>
+        <p class="wins">Liczba wygranych: <span>0</span></p>
+        <p class="losses">Liczba przegranych: <span>0</span></p>
+        <p class="draws">Liczba remisów: <span>0</span></p>
+    </div>
+    <h2>Zwycięzcą został/a:  <span data-summary="who-win"></span></h2>
+    <script src="rock.js"></script>
+</body>
+
+</html>
