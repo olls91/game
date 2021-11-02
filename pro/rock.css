@@ -23,7 +23,8 @@ header .fa-arrow-left {
     left: 3%;
     font-size: 40px;
     cursor: pointer;
-    color: black;
+    color: white;
+    transition: .2s linear;
     /* z-index: 2 */
 }
 
