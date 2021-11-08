@@ -1,4 +1,4 @@
-// uruchomienie menu z ikony laptopa
+// przewijanie sekcji technologie ze strzałki
 $(document).ready(function () {
     $('header .fa-chevron-down').on('click', function () {
         $('body,html').animate({
@@ -32,6 +32,20 @@ $('div.about').on('click', function () {
     }, 600);
 });
 
+// sekcja kontakt z menu
+$('div.con').on('click', function () {
+    $('body,html').animate({
+        scrollTop: $('h1.con').offset().top
+    }, 600);
+});
+
+// sekcja główna z menu
+$('div.main').on('click', function () {
+    $('body,html').animate({
+        scrollTop: $('header').offset().top
+    }, 600);
+});
+
 // sekcja projekty ze strzałki
 $('section.second .fa-chevron-down').on('click', function () {
     $('body,html').animate({
@@ -39,7 +53,7 @@ $('section.second .fa-chevron-down').on('click', function () {
     }, 600);
 });
 
-// sekcja o mnie ze strzałki
+// sekcja projekty ze strzałki
 $('section.projects .fa-chevron-down').on('click', function () {
     $('body,html').animate({
         scrollTop: $('h1.about').offset().top
@@ -147,12 +161,14 @@ $(document).on('scroll', function () {
     const $liSecond = $('ul li.adv');
     const $liThird = $('ul li.pro');
 
+
     const liOneHeight = $liOne.innerHeight();
     const liSecondHeight = $liSecond.innerHeight();
     const liThirdHeight = $liThird.innerHeight();
     const liOneFromTop = $liOne.offset().top;
     const liSecondFromTop = $liSecond.offset().top;
     const liThirdFromTop = $liThird.offset().top;
+
 
     if (scrollHeight > oneFromTop + oneHeight / 2 - windowHeight) {
         $one.addClass('active');
@@ -175,6 +191,8 @@ $(document).on('scroll', function () {
     if (scrollHeight > liThirdFromTop + liThirdHeight / 2 - windowHeight) {
         $liThird.addClass('active');
     }
+    
+
 
 
     // if (scrollHeight > liOneFromTop + liSecondHeight - windowHeight) {
