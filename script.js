@@ -53,13 +53,19 @@ $('section.second .fa-chevron-down').on('click', function () {
     }, 600);
 });
 
-// sekcja projekty ze strzałki
+// sekcja o mnie ze strzałki
 $('section.projects .fa-chevron-down').on('click', function () {
     $('body,html').animate({
         scrollTop: $('h1.about').offset().top
     }, 600);
 });
 
+// sekcja kontakt ze strzałki
+$('section.aboutme .fa-chevron-down').on('click', function () {
+    $('body,html').animate({
+        scrollTop: $('h1.con').offset().top
+    }, 600);
+});
 
 
 
@@ -71,12 +77,25 @@ const arrow = document.querySelector('.fa-chevron-down')
 const nav = document.querySelector('section.menu');
 const textH1 = document.querySelector('h1.tech');
 
-// ustawiam nasłuchiwanie
-// uruchamiam wysuwanie menu z boku okna przeglądarki
-laptop.addEventListener('click', function () {
-    nav.classList.toggle('active');
 
-})
+// uruchamiam wysuwanie i chowanie menu z boku okna przeglądarki
+
+const move = () => {
+    nav.classList.toggle('active');
+}
+const disappear = () => {
+    nav.classList.toggle('active');
+}
+
+
+laptop.addEventListener('click', move);
+nav.addEventListener('click', disappear)
+
+
+
+
+
+
 
 // sekcja o mnie - efekt pisania
 
@@ -84,7 +103,7 @@ const typedTextSpan = document.querySelector('.typed-text');
 const cursorSpn = document.querySelector('.cursor');
 
 
-const textArray = ['Wife', 'Mother', 'Future front-end developer'];
+const textArray = ['Wife', 'Mother', 'Frontend developer'];
 const typingDelay = 50;
 const erasingDeley = 50;
 // erase - wymazać, wycierać
@@ -135,7 +154,6 @@ $(document).on('scroll', function () {
 
     // wysokość scrolla
     const scrollHeight = $(this).scrollTop();
-    console.log(` wysokość scrolla ${scrollHeight}`);
     const $one = $('p.one');
     // wysokość elementu
     const oneHeight = $one.outerHeight();
@@ -191,9 +209,28 @@ $(document).on('scroll', function () {
     if (scrollHeight > liThirdFromTop + liThirdHeight / 2 - windowHeight) {
         $liThird.addClass('active');
     }
-    
 
 
+// const $tech = $('.tech');
+// const techHeight = $tech.outerHeight();
+// const techFromTop = $tech.offset().top;
+// const $pro = $('.projects::after');
+// const proHeight = $pro.outerHeight();
+// const proFromTop = $pro.offset().top;
+// const $about = $('h1.about');
+// const aboutHeight = $about.outerHeight();
+// const aboutFromTop = $about.offset().top;
+// const $con = $('h1.con');
+// const conHeight = $con.outerHeight();
+// const conFromTop = $con.offset().top;
+
+// if (scrollHeight > techFromTop + techHeight / 2 - windowHeight) {
+//     $tech.addClass('enter');
+// }
+
+// if (scrollHeight > proFromTop + proHeight / 2 - windowHeight) {
+//     $pro.addClass('enter');
+// }
 
     // if (scrollHeight > liOneFromTop + liSecondHeight - windowHeight) {
     //     $liSecond.addClass('active');
@@ -206,4 +243,12 @@ $(document).on('scroll', function () {
     // if (scrollHeight < 100) {
     //     $(' li.pro').removeClass('active');
     // }
+
+
+});
+// wyskakujące linie pod nagłówkami
+$(document).on('scroll', function () {
+
+
+
 });
