@@ -1,8 +1,7 @@
 body {
     margin: 0;
     padding: 0;
-    /* max-width: 90%; */
-    /* height: 100vh; */
+    height: 100vh;
     box-sizing: border-box;
     background: linear-gradient(166deg, rgba(50, 50, 57, 1) 0%, rgba(34, 163, 118, 1) 44%, rgba(0, 212, 255, 1) 100%);
     /* background-color: rgb(164, 216, 105); */
@@ -10,9 +9,9 @@ body {
 }
 
 header {
-    height: 70px;
+    height: 80px;
     background-color: transparent;
-    padding: 5px;
+    margin: 7px;
     /* margin-bottom: 20px; */
     /* line-height: 100px; */
 }
@@ -32,11 +31,20 @@ header .fa-arrow-left {
     font-size: 50px;
 }
 
-h1 {
+h1.main {
     text-align: center;
-    z-index: 1;
+    font-size: 24px;
+    margin: 7px;
     /* padding: 20px; */
 }
+
+h1.game {
+    text-align: center;
+    font-size: 28px;
+    margin: 7px;
+    /* padding: 20px; */
+}
+
 
 .rock {
     margin: 5px;
@@ -165,35 +173,62 @@ button:hover {
     border: 5px double grey;
 }
 
-/* .panel {
-    margin: 10px;
-} */
 
 .panel-left,
-.panel-central,
 .panel-right {
-    float: left;
-    width: 31%;
-    /* height: 300px; */
+    width: 17%;
     text-align: center;
     margin: 10px;
     padding: 4px;
-    /* background-color: red; */
-
 }
 
-.panel-central {
-    margin-top: 30px;
+.panel-left {
+    position: absolute;
+    top: 57%;
+    left: 3%;
 }
 
-.panel-central input {
-    font-size: 22px;
-    margin: 10px
+
+h3.l {
+    position: relative;
+    font-size: 25px;
+    padding: 5px;
+    margin: 8px;
+    cursor: pointer;
+    overflow: hidden;
 }
 
-h3 {
-    font-size: 20px;
-    margin: 7px;
+h3.r {
+    position: relative;
+    font-size: 25px;
+    padding: 5px;
+    margin: 8px;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+h3.r::before,
+h3.l::before {
+    content: "";
+    position: absolute;
+    bottom: 0%;
+    left: -120%;
+    height: 3px;
+    width: 103%;
+    background-color: yellow;
+    transition: .3s cubic-bezier(0.785, 0.135, 0.15, 0.86)
+}
+
+h3.r:hover::before,
+h3.l:hover::before {
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+
+.panel-right {
+    position: absolute;
+    top: 57%;
+    right: 5%;
 }
 
 .panel-right span,
@@ -205,4 +240,317 @@ h3 {
 .panel-right p,
 .panel-left p {
     margin: 7px;
+}
+
+.panel-central {
+    position: absolute;
+    top: 73%;
+    left: 50%;
+    transform: translate(-50%, 0);
+    text-align: left;
+}
+
+.panel-central input {
+    font-size: 20px;
+    margin: 5px;
+    text-align: center;
+}
+
+h3.central {
+    /* display: inline; */
+    font-size: 20px;
+    padding: 5px;
+    margin: 8px;
+    cursor: pointer;
+    text-align: center;
+}
+
+h2.w {
+    position: absolute;
+    top: 88%;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+
+
+
+@media (max-width:360px) and (orientation:portrait) {
+    body {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        max-width: 100%;
+
+    }
+
+    header {
+        height: 18%;
+        background-color: transparent;
+        padding: 5px;
+        width: 100%;
+        margin: 0 auto;
+        /* margin-bottom: 20px; */
+        /* line-height: 100px; */
+    }
+
+    header .fa-arrow-left {
+        font-size: 20px;
+        cursor: pointer;
+    }
+
+    .fa-arrow-left:hover {
+        font-size: 25px;
+    }
+
+
+
+    h1.main {
+        justify-content: center;
+        font-size: 28px;
+        margin: 20px;
+        display: flex;
+    }
+
+    h1.game {
+        text-align: center;
+        font-size: 25px;
+        margin: 7px;
+        /* padding: 20px; */
+    }
+
+    /* .main span {
+        display: inline-block;
+    } */
+
+    .rock {
+        margin: 5px;
+        animation: rock .3s;
+    }
+
+    .paper {
+        /* color: white; */
+        margin: 5px;
+        animation: paper .3s .1s;
+    }
+
+    .sciss {
+        /* color: blue; */
+        margin: 5px;
+        animation: scissors .3s .2s;
+    }
+
+    @keyframes rock {
+        0% {
+            color: black;
+        }
+
+        10% {
+            color: grey;
+        }
+
+        90% {
+            color: grey;
+        }
+
+        100% {
+            color: black;
+        }
+    }
+
+    @keyframes paper {
+        0% {
+            color: black;
+        }
+
+        10% {
+            color: white;
+        }
+
+        90% {
+            color: white;
+        }
+
+        100% {
+            color: black;
+        }
+    }
+
+    @keyframes scissors {
+        0% {
+            color: black;
+        }
+
+        10% {
+            color: blue;
+        }
+
+        90% {
+            color: blue;
+        }
+
+        100% {
+            color: black;
+        }
+    }
+
+    h2 {
+        text-align: center;
+        margin: 10px;
+        font-size: 20px;
+    }
+
+    .select {
+        /* background-color: green; */
+        width: 90%;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .select img {
+        width: 30%;
+        cursor: pointer;
+    }
+
+    .hidden {
+        position: relative;
+        left: -100%;
+        top: 0;
+    }
+
+    .hidden p {
+        font-size: 18px;
+        color: red;
+        text-shadow: 0 0 3px white;
+        padding: 2px;
+        transition: .4s cubic-bezier(0.39, 0.575, 0.565, 1);
+    }
+
+    .active {
+        display: block;
+        left: 0;
+        text-align: center;
+    }
+
+    button {
+        display: block;
+        margin: 0 auto;
+        width: 200px;
+        font-size: 20px;
+        padding: 7px;
+        background-color: white;
+        border: 5px double black;
+        cursor: pointer;
+    }
+
+    button:hover {
+        background-color: rgb(218, 218, 71);
+        border: 5px double grey;
+    }
+
+    /* .panel {
+        margin: 10px;
+    } */
+    .panel-central {
+        position: absolute;
+        top: 57%;
+        left: 50%;
+        transform: translate(-50%, 0);
+        text-align: left;
+    }
+
+    .panel-central input {
+        font-size: 14px;
+        margin: 3px;
+        text-align: center;
+    }
+
+    h3.central {
+        /* display: inline; */
+        font-size: 16px;
+        padding: 5px;
+        margin: 4px;
+        text-align: center;
+    }
+
+    .panel-left,
+    .panel-right {
+        width: 45%;
+        text-align: center;
+        margin: 10px;
+        padding: 4px;
+        margin: 0 auto;
+    }
+
+    .panel-left {
+        position: absolute;
+        top: 77%;
+        left: 2%;
+    }
+
+
+    h3.l {
+        position: relative;
+        font-size: 18px;
+        padding: 5px;
+        margin: 8px;
+        cursor: pointer;
+        overflow: hidden;
+    }
+
+    h3.r {
+        position: relative;
+        font-size: 18px;
+        padding: 5px;
+        margin: 8px;
+        cursor: pointer;
+        overflow: hidden;
+    }
+
+    h3.r::before,
+    h3.l::before {
+        content: "";
+        position: absolute;
+        bottom: 0%;
+        left: -120%;
+        height: 3px;
+        width: 103%;
+        background-color: yellow;
+        transition: .3s cubic-bezier(0.785, 0.135, 0.15, 0.86)
+    }
+
+    h3.r:hover::before,
+    h3.l:hover::before {
+        left: 50%;
+        transform: translate(-50%, 0);
+    }
+
+    .panel-right {
+        position: absolute;
+        top: 77%;
+        right: 2%;
+    }
+
+    .panel-right span,
+    .panel-left span {
+        font-weight: bold;
+
+    }
+
+    .panel-right p,
+    .panel-left p {
+        margin: 7px;
+        font-size: 14px;
+    }
+
+
+
+    h2.w {
+        position: absolute;
+        top: 68%;
+        left: 50%;
+        font-size: 16px;
+        transform: translate(-50%, 0);
+    }
 }
