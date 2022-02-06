@@ -1015,7 +1015,7 @@ h2.w {
     } */
     .panel-central {
         position: absolute;
-        top: 57%;
+        top: 61%;
         left: 50%;
         transform: translate(-50%, 0);
         text-align: left;
@@ -1109,7 +1109,7 @@ h2.w {
 
     h2.w {
         position: absolute;
-        top: 68%;
+        top: 72%;
         left: 50%;
         font-size: 16px;
         transform: translate(-50%, 0);
