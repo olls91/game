@@ -1389,6 +1389,318 @@ footer {
 
 }
 
+@media (max-width:378px) and (orientation:portrait) {
+    header {
+        background-position: left;
+    }
+
+    .fa-laptop {
+        top: 15px;
+        right: 15px;
+        font-size: 45px;
+    }
+
+    header .fa-chevron-down {
+        left: 85%;
+        font-size: 40px;
+        text-shadow: 0 -13px 0 white;
+    }
+
+    div.pres {
+        top: 29%;
+        height: 40%;
+    }
+
+    /* witam */
+    h1.first {
+        font-size: 50px;
+        padding: 10px;
+    }
+
+    /* jestem... */
+    h2.first {
+        font-size: 30px;
+        /* padding: 10px 0; */
+    }
+
+    /* junior... */
+    p.first {
+        font-size: 32px;
+        padding: 5px;
+    }
+
+    button.pf {
+        left: 15%;
+        bottom: 7%;
+        font-size: 25px;
+        width: 70%;
+    }
+
+    section.menu {
+        width: 150px;
+        height: 300px;
+        top: 27%
+    }
+
+    .nav {
+        flex-basis: 59px;
+        font-size: 25px;
+    }
+
+    .tech {
+        font-size: 30px;
+    }
+
+    /* cała sekcja technologi */
+    section.second {
+        position: relative;
+        width: 100%;
+        height: 85vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        background-color: #58555A;
+        overflow: hidden;
+        padding-bottom: 60px;
+
+    }
+
+    /* stylowanie strzałki */
+    .second .fa-chevron-down {
+        display: none;
+    }
+
+    div.container {
+        width: 100px;
+        height: 100px;
+        margin: 5px 40px;
+    }
+
+    div.inside {
+        border-radius: 0;
+        width: 120%;
+        height: 120%;
+    }
+
+    /* div.card {
+        transition: transform 1s;
+    } */
+
+    /* div.container:hover div.card {
+        width: 120px;
+        height: 120px;
+
+    } */
+
+    div.inside h2 {
+        display: none;
+    }
+
+    div.inside p {
+        top: 5%;
+        font-size: 16px;
+    }
+
+    h1.projects {
+        height: 10vh;
+        line-height: 8vh;
+        font-size: 30px;
+        padding: 8px 8px
+    }
+
+    /* cała sekcja */
+    section.projects {
+        height: 90vh;
+    }
+
+    /* strzałka */
+    .projects .fa-chevron-down {
+        display: none;
+    }
+
+
+    /* kontener z projektami */
+    div.pictures {
+        flex-direction: column;
+        justify-content: space-around;
+        width: 70%;
+        margin: 7px auto;
+    }
+
+    .pictures h2 {
+        font-size: 15px;
+    }
+
+    h1.about {
+        height: 10vh;
+        line-height: 8vh;
+        font-size: 30px;
+        padding: 8px 8px
+    }
+
+    section.aboutme {
+        height: 90vh;
+    }
+
+
+
+    /* napisy - efekt pisania na maszynie */
+    div.letter {
+        font-family: 'Open Sans', sans-serif;
+        margin: 0;
+        padding: 0;
+        height: 5vh;
+        line-height: 5vh;
+    }
+
+    span.typed-text {
+        font-size: 16px;
+    }
+
+
+    .aboutme p {
+        font-family: 'Open Sans', sans-serif;
+        color: white;
+        font-size: 13px;
+        line-height: 3vh;
+        margin: 7px 15px;
+        font-family: 'Secular One', sans-serif;
+        /* opacity: 1; */
+        /* filter: brightness(1); */
+    }
+
+    li.web,
+    li.adv,
+    li.pro {
+        margin-right: 20px;
+    }
+
+    ul {
+        font-family: 'Open Sans', sans-serif;
+        font-size: 13px;
+        margin: 7px 15px 7px 30px;
+        line-height: 3vh;
+    }
+
+    @keyframes web {
+        0% {
+            transform: translate(200%)
+        }
+
+        100% {
+            transform: translate(0)
+        }
+    }
+
+    @keyframes advanced {
+        0% {
+            transform: translate(200%)
+        }
+
+        100% {
+            transform: translate(0)
+        }
+    }
+
+    @keyframes pro {
+        0% {
+            transform: translate(200%)
+        }
+
+        100% {
+            transform: translate(0)
+        }
+    }
+
+    .aboutme .fa-chevron-down {
+        display: none;
+    }
+
+
+    h1.con {
+        height: 10vh;
+        line-height: 8vh;
+        font-size: 30px;
+        padding: 8px 8px
+    }
+
+    section.contact {
+        height: 90vh;
+    }
+
+    div.twoSides {
+        display: flex;
+        flex-direction: column;
+        align-content: space-around;
+    }
+
+    .twoSides form {
+        font-family: 'Open Sans', sans-serif;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 80%;
+        height: 60vh;
+        margin: 5px auto;
+    }
+
+    form input {
+        font-family: 'Open Sans', sans-serif;
+        font-size: 16px;
+        margin: 5px
+    }
+
+    form textarea {
+        font-family: 'Open Sans', sans-serif;
+        font-size: 16px;
+        padding: 35px 10px;
+        margin: 7px;
+    }
+
+    button.mg {
+        font-family: 'Open Sans', sans-serif;
+        height: 7vh;
+        width: 70%;
+        font-size: 16px;
+    }
+
+    div.socials {
+        display: flex;
+        flex-grow: 1;
+        flex-direction: column;
+        justify-content: space-around;
+        color: white;
+        letter-spacing: 1px;
+        font-size: 16px;
+        /* background-color: yellow; */
+    }
+
+    div.block {
+        align-items: center;
+        display: flex;
+        margin: 15px;
+    }
+
+    .socials img {
+        width: 15%;
+        margin: 5px;
+    }
+
+    .socials span {
+        font-family: 'Open Sans', sans-serif;
+        padding: 7px;
+    }
+
+    footer {
+        text-align: center;
+        margin: 5px auto;
+        font-family: 'Teko', sans-serif;
+        font-size: 23px;
+        background-color: white;
+    }
+}
+
 @media(max-width:362px) and (orientation:portrait) {
 
 
