@@ -620,6 +620,7 @@ section.aboutme {
 
 /* napisy - efekt pisania na maszynie */
 div.letter {
+    font-family: 'Teko', sans-serif;
     margin: 10px;
     height: 10vh;
     line-height: 10vh;
