@@ -600,7 +600,7 @@ section.aboutme {
     height: 85vh;
     background: linear-gradient(rgba(0, 0, 0, .8), rgba(0, 0, 0, .8)), url(code.jpg);
     align-items: center;
-    font-family: 'Teko', sans-serif;
+    font-family: 'Open Sans', sans-serif;
     padding: 10px;
     letter-spacing: 1px;
     overflow: hidden;
@@ -620,10 +620,11 @@ section.aboutme {
 
 /* napisy - efekt pisania na maszynie */
 div.letter {
-    font-family: 'Teko', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
     margin: 10px;
-    height: 10vh;
-    line-height: 10vh;
+    height: 11vh;
+    line-height: 11vh;
     text-align: center;
     width: 100%;
 }
@@ -639,7 +640,6 @@ span.typed-text {
     color: white;
     font-size: 20px;
     margin: 7px 15px;
-    font-family: 'Secular One', sans-serif;
     /* opacity: 1; */
     /* filter: brightness(1); */
 }
@@ -692,7 +692,7 @@ p.third.active {
 ul {
     list-style: circle;
     text-decoration: none;
-    font-family: 'Secular One', sans-serif;
+    font-family: 'Open Sans', sans-serif;
     color: white;
     font-size: 20px;
     margin: 7px 30px;
@@ -773,7 +773,7 @@ section.contact {
 
 div.twoSides {
     display: flex;
-    font-family: 'Teko', sans-serif;
+    font-family: 'Open Sans', sans-serif;
     height: 100%;
 }
 
@@ -787,15 +787,15 @@ div.twoSides {
 }
 
 form input {
-    font-family: 'Teko', sans-serif;
-    font-size: 25px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 22px;
     padding: 10px 5px;
     margin: 10px 10px;
 }
 
 form textarea {
-    font-family: 'Teko', sans-serif;
-    font-size: 25px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 22px;
     padding: 50px 5px;
     margin: 10px;
 }
@@ -805,8 +805,9 @@ button.mg {
     height: 8vh;
     width: 40%;
     margin: 10px auto;
-    font-family: 'Teko', sans-serif;
-    font-size: 22px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 500;
+    font-size: 20px;
     border: 3px solid white;
     cursor: pointer
 }
@@ -817,8 +818,9 @@ div.socials {
     justify-content: center;
     color: white;
     letter-spacing: 2;
-    font-size: 20px;
+    font-size: 18px;
     margin: 5px;
+    font-family: 'Open Sans', sans-serif;
     /* background-color: yellow; */
 }
 
@@ -834,7 +836,6 @@ div.block {
 }
 
 .socials span {
-    font-family: 'Teko', sans-serif;
     letter-spacing: 1px;
 }
 
@@ -990,7 +991,7 @@ footer {
         background-size: cover;
         background-repeat: no-repeat;
         align-items: center;
-        font-family: 'Teko', sans-serif;
+        font-family: 'Open Sans', sans-serif;
         padding: 10px;
         letter-spacing: 1px;
         overflow: hidden;
@@ -998,6 +999,7 @@ footer {
 
     /* napisy - efekt pisania na maszynie */
     div.letter {
+        font-family: 'Open Sans', sans-serif;
         margin: 5px;
         height: 8vh;
 
@@ -1014,6 +1016,7 @@ footer {
 
 
     .aboutme p {
+        font-family: 'Open Sans', sans-serif;
         color: white;
         font-size: 25px;
         line-height: 3vh;
@@ -1026,6 +1029,7 @@ footer {
     }
 
     ul {
+        font-family: 'Open Sans', sans-serif;
         font-size: 25px;
         margin: 7px 15px 7px 30px;
         line-height: 3vh;
@@ -1084,6 +1088,7 @@ footer {
     div.twoSides {
         display: flex;
         flex-direction: column;
+        font-family: 'Open Sans', sans-serif;
         align-content: space-around;
     }
 
@@ -1097,20 +1102,24 @@ footer {
     }
 
     form input {
-        font-size: 30px;
+        font-family: 'Open Sans', sans-serif;
+        font-size: 28px;
         margin: 7px
     }
 
     form textarea {
-        font-size: 30px;
+        font-family: 'Open Sans', sans-serif;
+        font-size: 28px;
         padding: 55px 10px;
         margin: 7px;
     }
 
     button.mg {
+        font-family: 'Open Sans', sans-serif;
+        font-weight: 500;
         height: 5vh;
         width: 70%;
-        font-size: 30px;
+        font-size: 28px;
     }
 
     div.socials {
@@ -1120,7 +1129,7 @@ footer {
         justify-content: center;
         color: white;
         letter-spacing: 3px;
-        font-size: 35px;
+        font-size: 30px;
         height: 50vh;
         /* background-color: yellow; */
     }
@@ -1137,6 +1146,7 @@ footer {
     }
 
     .socials span {
+        font-family: 'Open Sans', sans-serif;
         padding: 7px;
     }
 
@@ -1144,7 +1154,8 @@ footer {
         text-align: center;
         margin: 5px auto;
         font-family: 'Teko', sans-serif;
-        font-size: 35px;
+        font-size: 40px;
+        letter-spacing: 2px;
         background-color: white;
     }
 }
@@ -1268,6 +1279,7 @@ footer {
 
     /* napisy - efekt pisania na maszynie */
     div.letter {
+        font-family: 'Open Sans', sans-serif;
         width: 100%;
         margin: 0;
         height: 7vh;
@@ -1285,10 +1297,12 @@ footer {
 
 
     .aboutme p {
+        font-family: 'Open Sans', sans-serif;
         font-size: 14px;
     }
 
     ul {
+        font-family: 'Open Sans', sans-serif;
         font-size: 16px;
     }
 
@@ -1334,20 +1348,24 @@ footer {
     }
 
     form input {
-        font-size: 23px;
+        font-family: 'Open Sans', sans-serif;
+        font-size: 20px;
         margin: 7px
     }
 
     form textarea {
-        font-size: 23px;
+        font-family: 'Open Sans', sans-serif;
+        font-size: 20px;
     }
 
     button.mg {
-        font-size: 23px;
+        font-family: 'Open Sans', sans-serif;
+        font-weight: 500;
+        font-size: 20px;
     }
 
     div.socials {
-        font-size: 25px;
+        font-size: 19px;
     }
 
     div.block {
@@ -1359,11 +1377,12 @@ footer {
     }
 
     .socials span {
+        font-family: 'Open Sans', sans-serif;
         padding: 7px;
     }
 
     footer {
-        font-size: 25px;
+        font-size: 27px;
     }
 
 }
@@ -1529,6 +1548,7 @@ footer {
 
     /* napisy - efekt pisania na maszynie */
     div.letter {
+        font-family: 'Open Sans', sans-serif;
         margin: 0;
         padding: 0;
         height: 5vh;
@@ -1541,6 +1561,7 @@ footer {
 
 
     .aboutme p {
+        font-family: 'Open Sans', sans-serif;
         color: white;
         font-size: 13px;
         line-height: 3vh;
@@ -1557,6 +1578,7 @@ footer {
     }
 
     ul {
+        font-family: 'Open Sans', sans-serif;
         font-size: 13px;
         margin: 7px 15px 7px 30px;
         line-height: 3vh;
@@ -1615,6 +1637,7 @@ footer {
     }
 
     .twoSides form {
+        font-family: 'Open Sans', sans-serif;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -1624,20 +1647,23 @@ footer {
     }
 
     form input {
-        font-size: 18px;
+        font-family: 'Open Sans', sans-serif;
+        font-size: 16px;
         margin: 5px
     }
 
     form textarea {
-        font-size: 18px;
+        font-family: 'Open Sans', sans-serif;
+        font-size: 16px;
         padding: 35px 10px;
         margin: 7px;
     }
 
     button.mg {
+        font-family: 'Open Sans', sans-serif;
         height: 7vh;
         width: 70%;
-        font-size: 20px;
+        font-size: 16px;
     }
 
     div.socials {
@@ -1646,8 +1672,8 @@ footer {
         flex-direction: column;
         justify-content: space-around;
         color: white;
-        letter-spacing: 3px;
-        font-size: 22px;
+        letter-spacing: 1px;
+        font-size: 16px;
         /* background-color: yellow; */
     }
 
@@ -1663,6 +1689,7 @@ footer {
     }
 
     .socials span {
+        font-family: 'Open Sans', sans-serif;
         padding: 7px;
     }
 
