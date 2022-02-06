@@ -1202,8 +1202,9 @@ footer {
     }
 
     button.pf {
-        left: 50%;
-        transform: translate(-50%);
+        left: 10%;
+        bottom: 5%;
+        /* transform: translate(-50%); */
         bottom: 7%;
         font-size: 35px;
         width: 80%;
@@ -1431,8 +1432,7 @@ footer {
     }
 
     button.pf {
-        left: 50%;
-        transform: translate(-50%);
+        left: 15%;
         bottom: 7%;
         font-size: 25px;
         width: 70%;
